@@ -24,17 +24,15 @@ def webhook():
 
     res = processRequest(req)
 
-    res = json.dumps(res, indent=4)
-    # print(res)
+    #res = json.dumps(res, indent=4)
+    #print(res)
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
     return r
 
 
 def processRequest(req):
-   # if req.get("result").get("action") != "list.asset":
-   #     return {}
-    res = makeWebhookResult()
+        res = makeWebhookResult()
     return res
 
 
