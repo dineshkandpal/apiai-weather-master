@@ -32,8 +32,8 @@ def webhook():
 
 
 def processRequest(req):
-    if req.get("result").get("action") != "list.asset":
-        return {}
+   # if req.get("result").get("action") != "list.asset":
+   #     return {}
     res = makeWebhookResult()
     return res
 
