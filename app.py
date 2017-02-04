@@ -40,9 +40,9 @@ def processRequest(req):
 
 def makeWebhookResult():
     return {
-        "speech": speech,
-        "displayText": speech,
-        # "data": data,
+        "speech": "there are 5 apple TV",
+        "displayText": "there are 5 apple TV",
+        # "data":   {},
         # "contextOut": [],
         "source": "apiai-weather-master"
     }
